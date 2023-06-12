@@ -1,11 +1,9 @@
 package com.ddd_bootcamp.domain;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Cart {
+    private UUID id = UUID.randomUUID();
     private List<Product> removedProducts = new ArrayList<>();
     private Map<Product, Integer> items = new HashMap();
 
