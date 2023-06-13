@@ -3,13 +3,15 @@ package com.ddd_bootcamp.domain;
 import java.util.Currency;
 
 public class Price {
-    private int price;
+    private Double price;
+    private String instance;
 
-    public Price(int price) {
+    public Price(Double price, String instance) {
         this.price = price;
+        this.instance = instance;
     }
 
-    public int getPrice() {
+    public Double getPrice() {
         return price;
     }
 }
